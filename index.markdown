@@ -1,6 +1,6 @@
----
+ï»¿---
 layout: default
-title: Ê×Ò³±êÌâ
+title: é¦–é¡µæ ‡é¢˜
 ---
 <ul class="posts">
 	{% for post in site.posts %}
