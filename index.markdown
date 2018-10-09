@@ -1,6 +1,6 @@
-﻿---
+---
 layout: default
-title: xxx
+title: xx
 ---
 <ul class="posts">
 	{% for post in site.posts %}
