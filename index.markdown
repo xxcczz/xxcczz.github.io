@@ -2,37 +2,12 @@
 layout: default
 title: Peter's Corner
 ---
+<ul class="posts">
+	{% for post in site.posts %}
+	<li>
 
-Hi there, I am Peter Wang, an [Open Source][a1] enthusiast. This site is
-dedicated to providing information about [me](resume.html) and [what I do](/work).
+		<a href="{{ post.url }}">{{ post.title }}</a>
 
-I am a screencastr at <http://haoduoshipin.com>.
-
-
-<p><br /><b>My Blog:</b></p>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-
-<a href="{{ post.url }}">{{ post.title }}</a>
-
-</li>
-    {% endfor %}
-  </ul>
-
-<p><b>Find me on:</b></p>
-
-<ul>
-
-<li><a href="http://c2.com/cgi/wiki?PeterWang">Wikiwikiweb</a></li>
-
-<li><a href="http://github.com/happypeter/">Github</a></li>
-
+	</li>
+	{% endfor %}
 </ul>
-<p><br /><b>Contact Information:</b></p>
-
-<blockquote>
-欢迎所有朋友加我微信：happypeter1983
-</blockquote>
-
-[a1]:http://www.baidu.com
