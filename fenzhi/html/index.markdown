@@ -4,7 +4,7 @@ title: Work
 ---
 
 
-<ul class="posts">
+<ul class="posts2">
 	{% for post in site.posts %}
 	<li>
 
