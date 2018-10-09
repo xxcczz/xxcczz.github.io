@@ -14,7 +14,7 @@ I am a screencastr at <http://haoduoshipin.com>.
     {% for post in site.posts %}
       <li>
 
-&raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+<a href="{{ post.url }}">{{ post.title }}</a>
 
 </li>
     {% endfor %}
