@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: Peter's Corner
 ---
@@ -12,7 +12,11 @@ I am a screencastr at <http://haoduoshipin.com>.
 <p><br /><b>My Blog:</b></p>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+
+<span>{{ post.date | date_to_string }}</span> 1&raquo;1 <a href="{{ post.url }}">{{ post.title }}</a>
+
+</li>
     {% endfor %}
   </ul>
 
