@@ -2,7 +2,7 @@
 layout: default
 title: 首页标题
 ---
-<ul class="posts1">
+<ul>
 	{% for post in site.posts %}
 	<li>
 
