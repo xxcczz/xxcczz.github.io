@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: Peter's Corner
+title: xxx
 ---
 <ul class="posts">
 	{% for post in site.posts %}
