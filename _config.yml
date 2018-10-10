@@ -1,4 +1,4 @@
 auto        : false
 lsi         : false
+permalink   : none
 markdown    : kramdown
-paginate    :5
