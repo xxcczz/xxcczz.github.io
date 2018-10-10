@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html>
+
+
+
+
+<head>
+
+
+
+
+<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+
+
+
+<title>javascript</title>
+
+
+
+<style type="text/css">
+
+
+
+
+#div1 {width:100px;height:100px;padding:10px;border:1px solid #CCC;}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<p>请将下面的橙色方块图片拖放到框中</p>
+
+
+
+<div id="div1" ondrop="l落下(event)" ondragover="y允许落下(event)"></div>
+
+
+
+<img id="drag1" src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif" draggable="true" ondragstart="t拖动(event)" />
+
+
+
+<script type="text/javascript">
+
+
+
+
+function y允许落下(元素){
+
+
+
+元素.preventDefault();
+
+
+
+}
+
+
+
+function t拖动(元素){
+
+
+
+元素.dataTransfer.setData("Text",元素.target.id);
+
+
+
+}
+
+
+
+function l落下(元素){
+
+
+
+var data=元素.dataTransfer.getData("Text");
+
+
+
+元素.target.appendChild(document.getElementById(data));
+
+
+
+//alert('拖放成功');
+
+
+
+元素.preventDefault();
+
+
+
+}
+
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
+
