@@ -1,2 +1,4 @@
-paginate: 5
-paginate_path: "page:num"
+auto        : false
+lsi         : false
+permalink   : none
+markdown    : kramdown
