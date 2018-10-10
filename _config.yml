@@ -2,4 +2,3 @@ auto        : false
 lsi         : false
 markdown    : kramdown
 paginate    :5
-paginate_path : "blog/page:num"
