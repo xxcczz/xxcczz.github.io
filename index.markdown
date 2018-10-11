@@ -1,3 +1,7 @@
+---
+layout: default
+title: 阿呆
+---
 {% for post in paginator.posts %}
     {{ post.url }}
 {% endfor %}
