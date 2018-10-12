@@ -29,7 +29,7 @@ title: My Blog
 				<!--当前页数-->	
 
 			{% else %}		
-<a href="{{ site.paginate_path | relative_url  }}">
+<a href="/{{ site.paginate_path | relative_url | replace: ':num', page }}">
 <!--page:num-->
 					
 					{{ page }}
