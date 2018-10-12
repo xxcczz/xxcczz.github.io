@@ -15,7 +15,7 @@ title: My Blog
 		上一页
 		</a>
 	{% else %}	
-		<span class="previous">Previous</span>
+		<span class="previous">上一页</span>
 	{% endif %}	
 	<span class="page_number ">	
 		Page: {{ paginator.page }} of {{ paginator.total_pages }}
@@ -26,6 +26,6 @@ title: My Blog
 		<a href="{{ paginator.next_page_path }}" class="next">下一页</a>
 		<!--下一页的路径-->
 	{% else %}	
-		<span class="next ">Next</span>
+		<span class="next ">下一页</span>
 	{% endif %}	
 </div>		
