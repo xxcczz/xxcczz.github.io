@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html> 
+
+
+
+
+<html> 
+
+
+
+
+
+<body> 
+
+
+
+
+
+<div style="text-align:center;">
+
+
+
+
+
+<button onclick="b播放或暂停()">播放/暂停</button> 
+
+
+
+
+<button onclick="b变大()">变大</button>
+
+
+
+
+<button onclick="z正常()">正常</button>
+
+
+
+
+<button onclick="b变小()">变小</button>
+
+
+
+
+<br /> 
+
+
+
+
+<video id="video1" width="420" style="margin-top:15px;">
+
+
+
+
+
+<source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4" />
+
+
+
+
+<source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg" />
+
+
+
+
+Your browser does not support HTML5 video.
+
+
+
+</video>
+
+
+
+</div> 
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+var 元素1=document.getElementById("video1");
+
+
+
+
+function b播放或暂停()
+
+
+
+
+{ 
+
+
+
+
+if (元素1.paused) 
+
+
+
+
+元素1.play(); 
+
+
+
+
+else 
+
+
+
+
+元素1.pause(); 
+
+
+
+
+} 
+
+
+
+
+function b变大()
+
+
+
+
+{ 
+
+
+
+
+元素1.width=560; 
+
+
+
+
+} 
+
+
+
+
+function b变小()
+
+
+
+
+{ 
+
+
+
+
+元素1.width=320; 
+
+
+
+
+} 
+
+
+
+
+function z正常()
+
+
+
+
+{ 
+
+
+
+
+元素1.width=420; 
+
+
+
+
+} 
+
+
+
+</script> 
+
+
+
+</body> 
+
+
+
+</html>
+
+
+
+

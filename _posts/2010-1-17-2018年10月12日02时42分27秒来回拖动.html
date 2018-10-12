@@ -1,0 +1,124 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html>
+
+
+
+
+<head>
+
+
+
+
+<style type="text/css">
+
+
+
+
+#div1, #div2
+
+
+
+{float:left; width:198px; height:66px; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+
+
+</style>
+
+
+
+<script type="text/javascript">
+
+
+
+
+function z指定放置位置(元素)
+
+
+
+{
+
+
+
+元素.preventDefault();//允许将数据/元素放置到其他元素中
+
+
+
+}
+
+
+
+function drag(ev)
+
+
+
+{
+
+
+
+ev.dataTransfer.setData("Text",ev.target.id);
+
+
+
+}
+
+
+
+function f放下(元素)
+
+
+
+{
+
+
+
+元素.preventDefault();//允许将数据/元素放置到其他元素中
+
+
+
+var data=元素.dataTransfer.getData("Text");
+
+
+
+元素.target.appendChild(document.getElementById(data));
+
+
+
+}
+
+
+</script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<div id="div1" ondrop="f放下(event)" ondragover="z指定放置位置(event)">
+
+
+
+
+<img src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif" draggable="true" ondragstart="drag(event)" id="drag1" />
+
+
+</div>
+
+
+
+<div id="div2" ondrop="f放下(event)" ondragover="z指定放置位置(event)"></div>
+
+
+</body>
+
+
+</html>
+
+
+

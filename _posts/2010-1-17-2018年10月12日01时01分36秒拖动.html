@@ -1,0 +1,120 @@
+﻿<!DOCTYPE HTML>
+
+
+
+<html>
+
+
+
+
+<head>
+
+
+
+
+<style type="text/css">
+
+
+
+
+#div1 {width:198px; height:66px;padding:10px;border:1px solid #aaaaaa;}
+
+
+</style>
+
+
+
+<script type="text/javascript">
+
+
+
+
+function z自定义函数1(元素)
+
+
+
+{
+
+
+
+元素.preventDefault();//指定了拖动的元素可以被放置的位置
+
+
+
+}
+
+
+
+function n拿起(元素)
+
+
+
+{
+
+
+
+元素.dataTransfer.setData("Text",元素.target.id);
+
+
+
+}
+
+
+
+function f放下(元素)
+
+
+
+{
+
+
+
+元素.preventDefault();//指定了拖动的元素可以被放置的位置
+
+
+
+var data=元素.dataTransfer.getData("Text");
+
+
+
+元素.target.appendChild(document.getElementById(data));
+
+
+
+}
+
+
+</script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<p>请把 W3School 的图片拖放到矩形中：</p>
+
+
+
+<div id="div1" ondrop="f放下(event)" ondragover="z自定义函数1(event)"></div>
+
+
+
+<br />
+
+
+
+<img id="drag1" src="http://www.w3school.com.cn/i/eg_dragdrop_w3school.gif" draggable="true" ondragstart="n拿起(event)" />
+
+
+</body>
+
+
+</html>
+
+
+
