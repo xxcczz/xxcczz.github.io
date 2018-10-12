@@ -29,7 +29,8 @@ title: My Blog
 				<!--当前页数-->	
 
 			{% else %}		
-				<a href="{{ site.paginate_path  }}">	
+<a href="{{ site.paginate_path | relative_url  }}">
+<!--page:num-->
 					
 					{{ page }}
 					<!--当前页数-->
