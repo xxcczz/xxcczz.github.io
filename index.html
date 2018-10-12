@@ -27,13 +27,7 @@ title: My Blog
 			<!--当前页数-->		
 				<em>{{ page }}</em>	
 				<!--当前页数-->	
-			{% elsif page == 1 %}		
-			<!--当前页数-->		
-				<a href="{{ paginator.previous_page_path | relative_url }}">	
-				<!--上一页的路径-->	
-					{{ page }}
-					<!--当前页数-->
-				</a>	
+
 			{% else %}		
 				<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">	
 					
