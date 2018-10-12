@@ -17,10 +17,11 @@ title: My Blog
 	{% else %}	
 		<span class="previous">上一页</span>
 	{% endif %}	
-	<span class="page_number ">	
-		Page: {{ paginator.page }} of {{ paginator.total_pages }}
-		<!--当前页数--><!--总的页数-->
-	</span>	
+<span class="page_number ">	
+	当前页数: {{ paginator.page }} / {{ paginator.total_pages }}
+	<!--当前页数--><!--总的页数-->
+</span>	
+
 	{% if paginator.next_page %}	
 	<!--下一页的页数-->	
 		<a href="{{ paginator.next_page_path }}" class="next">下一页</a>
