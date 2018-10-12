@@ -12,7 +12,8 @@ title: My Blog
 	<div class="pagination">				
 		{% if paginator.previous_page %}			
 		<!--上一页的页数-->			
-			<a href="{{ paginator.previous_page_path  }}">		
+<a href="{{ paginator.previous_page_path | relative_url }}">
+	
 			<!--上一页的路径-->		
 			&laquo; 上一页		
 			</a>		
