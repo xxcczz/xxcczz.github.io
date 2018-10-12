@@ -3,7 +3,7 @@ layout: default
 title: My Blog
 ---
 
-{% for 文章 in paginator.文章s %}
+{% for 文章 in paginator.posts %}
 <!--遍历这一页的文章-->
 
   <h1><a href="{{ 文章.url }}">{{ 文章.title }}</a></h1>
