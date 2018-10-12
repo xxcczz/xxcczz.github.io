@@ -17,7 +17,8 @@ title: My Blog
 			&laquo; 上一页		
 			</a>		
 		{% else %}			
-			<span>&laquo; 下一页</span>		
+			<span>&laquo; 上一页</span>
+
 		{% endif %}			
 		{% for page in (1..paginator.total_pages) %}			
 		<!--总的页数-->			
