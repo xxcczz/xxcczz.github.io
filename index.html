@@ -1,34 +1,39 @@
----
-layout: default
-title: My Blog
----
-
-<!-- This loops through the paginated posts -->			
-{% for post in paginator.posts %}			
-	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>		
-	<p class="author">		
-		<span class="date">{{ post.date }}</span>	
-	</p>		
-	<div class="content">		
-		{{ post.content }}	
-	</div>		
-{% endfor %}			
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+---		
+layout: default		
+title: My Blog		
+---		
+{% for post in paginator.posts %}		
+<!--遍历这一页的文章-->		
+	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>	
+	<!--链接--><!--标题-->	
+	<p class="author">	
+		<span class="date">{{ post.date }}</span>
+		<!--时间-->
+	</p>	
+	<div class="content">	
+		{{ post.content }}
+		<!--页面的内容-->
+	</div>	
+{% endfor %}		
+<div class="pagination">		
+	{% if paginator.previous_page %}	
+	<!--上一页的页数-->	
+		<a href="{{ paginator.previous_page_path }}" class="previous">
+		<!--上一页的路径-->
+		Previous
+		</a>
+	{% else %}	
+		<span class="previous">Previous</span>
+	{% endif %}	
+	<span class="page_number ">	
+		Page: {{ paginator.page }} of {{ paginator.total_pages }}
+		<!--当前页数--><!--总的页数-->
+	</span>	
+	{% if paginator.next_page %}	
+	<!--下一页的页数-->	
+		<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+		<!--下一页的路径-->
+	{% else %}	
+		<span class="next ">Next</span>
+	{% endif %}	
+</div>		
