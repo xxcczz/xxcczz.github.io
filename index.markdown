@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Peter's Corner
+title: 标题
 ---
 
 Hi there, I am Peter Wang, an [Open Source][oss] enthusiast. This site is
