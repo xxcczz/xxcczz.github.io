@@ -2,14 +2,7 @@
 layout: default
 title: 标题
 ---
-
 Hi there, I am [怠惰]
-This site is
-dedicated to providing information about [me](resume.html) and [what I do](/work).
-
-I am a screencastr at <http://haoduoshipin.com>.
-
-
 <p><br /><b>My Blog:</b></p>
   <ul class="posts">
     {% for post in site.posts %}
