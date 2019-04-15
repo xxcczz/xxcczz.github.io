@@ -14,10 +14,7 @@ Hi , I am 怠惰
 <p>
 	<b>2:</b>
 </p>
-<ul>
-	<li><a href="http://c2.com/cgi/wiki?PeterWang">Wikiwikiweb</a></li>
-	<li><a href="http://github.com/happypeter/">Github</a></li>
-</ul>
+
 <p>
 	<br/><b>3:</b>
 </p>
