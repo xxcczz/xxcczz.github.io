@@ -22,6 +22,6 @@ Hi there, I am [怠惰]
 <p><br /><b>Contact Information:</b></p>
 
 <blockquote>
-欢迎所有朋友加我微信：happypeter1983
+欢迎所有朋友加我qq：417902579
 </blockquote>
 
