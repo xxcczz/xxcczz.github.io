@@ -2,7 +2,7 @@
 layout: default
 title: 标题
 ---
-Hi there, I am [怠惰]
+Hi there, I am 怠惰
 <p><br /><b>My Blog:</b></p>
   <ul class="posts">
     {% for post in site.posts %}
