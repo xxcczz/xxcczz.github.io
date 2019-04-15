@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 标题
+title: 怠惰
 ---
 Hi , I am 怠惰
 <p>
