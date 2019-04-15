@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 标题1
+title: 怠惰
 ---
 
 
