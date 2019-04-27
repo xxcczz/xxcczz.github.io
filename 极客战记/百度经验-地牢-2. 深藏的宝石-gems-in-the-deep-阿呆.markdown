@@ -1,0 +1,10 @@
+﻿---
+layout: default
+title: gems-in-the-deep
+---
+## 2. 深藏的宝石
+```
+
+http://jingyan.baidu.com/article/546ae185cabf621149f28ccf.html
+
+```
